@@ -1,0 +1,65 @@
+.header {
+    height: 100px;
+    background-color: #21c08b;
+}
+
+.login {
+    background: linear-gradient(#21c08b, #ab88ff);
+    min-height: calc(100vh - 200px);
+}
+
+.login .container {
+    min-height: 700px;
+    width: 320px;
+    padding: 0px;
+}
+
+.login .container .data {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login .container .data .input {
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    height: 50px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.login .container .data .button {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+    height: 100px;
+    background-color: #ab88ff;
+}
+
+.footer .links {
+    color: #fff;
+}
+
+.footer .links:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 480px) {
+    .login .container {
+        width: 440px;
+        padding: 60px 68px 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid #fff;
+        border-radius: 40px;
+    }
+
+    .footer .links {
+    color: #fff;
+    margin-right: 12px;
+}
+}

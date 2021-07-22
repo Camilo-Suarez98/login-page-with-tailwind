@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Login Page with Tailwind</title>
+</head>
+<body>
+    <header class="header flex justify-center items-center w-full sm:justify-between">
+        <img class="w-48 mx-8" src="./images/logo-platzi-video-BW2.png" alt="Logo">
+    </header>
+    <div class="login flex flex-col justify-center items-center sm:px-7">
+        <div class="container flex flex-col justify-around">
+            <h1 class="text-white text-center font-bold text-xl">Login</h1>
+            <div class="data text-white flex flex-col">
+                <input class="input placeholder-white" type="email" placeholder="Email" />
+                <input class="input placeholder-white" type="password" placeholder="Password" />
+                <button class="button h-12 font-bold tracking-widest my-3 rounded-3xl" type="submit">Login</button>
+                <div class="remember flex justify-between items-center my-2">
+                    <label class="text-sm" for="">
+                        <input type="checkbox" />Remember me
+                    </label>
+                    <a class="text-sm hover:underline" href="/">Forgot my password</a>
+                </div>
+            </div>
+
+            <div class="social text-white flex flex-col items-center sm:place-items-start">
+                <div class="flex justify-start items-center my-3">
+                    <img class="mr-2" src="./images/google-icon.png" alt="Google icon" />
+                    <p><a class="hover:underline hover:cursor-pointer" href="/"> Login with Google </a></p>
+                </div>
+                <div class="flex">
+                    <img class="mr-2" src="./images/twitter-icon.png" alt="Twitter icon" />
+                    <p><a class="hover:underline hover:cursor-pointer" href="/"> Login with Twitter </a></p>
+                </div>
+            </div>
+            <p class="text-white text-center">You don't have an account? <a class="font-bold hover:underline" href="/">Sing up</a></p>
+        </div>
+    </div>
+
+    <footer class="footer text-base flex flex-col justify-center items-center sm:flex-row">
+        <a class="links" href="/">Use Conditions</a>
+        <a class="links" href="/">Privacy Declarations</a>
+        <a class="links" href="/">Help Center</a>
+    </footer>
+</body>
+</html>
